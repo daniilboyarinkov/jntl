@@ -1,0 +1,32 @@
+body div:first-of-type {
+  position: relative;
+  overflow: hidden;
+
+  background-image: linear-gradient(90deg, #f7ebcc 90px, #654430 90px),
+    linear-gradient(90deg, #f7ebcc 90px, #654430 90px);
+  background-position: 0 0, 90px 90px, 90px 90px;
+  background-repeat: repeat-x;
+  background-size: 180px 90px;
+}
+
+body div:first-of-type::after,
+body div:first-of-type::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  background-color: #5f5d5e;
+  border: 3px solid #252324;
+  box-shadow: 0 0 0 5px #5f5d5e;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+}
+
+body div:first-of-type::after {
+  top: 75%;
+  left: 75%;
+}

@@ -1,0 +1,186 @@
+<style>
+  /*
+    #f45a3b,
+    #000000,
+    #d8d8d8,
+    #ff0000,
+    #999999,
+    #666666,
+    #222222,
+    #ffffff
+    */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background: #ffffff;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .flag {
+    position: absolute;
+
+    left: 315px;
+    top: 110px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 65px 20px 0;
+    border-color: transparent #ff0000 transparent transparent;
+  }
+  .stick {
+    position: absolute;
+
+    left: 380px;
+    top: 105px;
+
+    width: 5px;
+    height: 320px;
+
+    background-color: #999999;
+  }
+  .pipe-up {
+    position: absolute;
+
+    left: 355px;
+    top: 425px;
+
+    width: 55px;
+    height: 45px;
+
+    background-color: #666666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .pipe-up::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7px;
+    background-color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .pipe-down {
+    position: absolute;
+
+    left: 320px;
+    top: 465px;
+
+    width: 95px;
+    height: 56px;
+
+    background-color: #000;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .gray-cap {
+    position: absolute;
+
+    left: 250px;
+    top: 520px;
+
+    width: 530px;
+    height: 55px;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 80% 165%;
+
+    background-color: #d8d8d8;
+  }
+  .red-cap {
+    position: absolute;
+
+    left: 245px;
+    top: 570px;
+
+    width: 540px;
+    height: 15px;
+
+    border-radius: 15px;
+
+    background-color: #ff0000;
+  }
+
+  .red-cart {
+    position: absolute;
+
+    left: 255px;
+    top: 585px;
+
+    width: 520px;
+    height: 130px;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    background-color: #f45a3b;
+  }
+
+  .tray {
+    position: absolute;
+
+    left: 270px;
+    top: 715px;
+
+    width: 490px;
+    height: 110px;
+
+    background-color: #222222;
+
+    clip-path: polygon(
+      2% 0%,
+      98% 0%,
+      100% 8%,
+      100% 36%,
+      87% 100%,
+      14% 100%,
+      0% 36%,
+      0% 9%
+    );
+  }
+
+  .wheel {
+    position: absolute;
+
+    top: calc(715px + 40px);
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    background-color: #000000;
+  }
+
+  .wheel-1 {
+    left: calc(270px + 10px);
+  }
+  .wheel-2 {
+    left: calc(270px + 185px);
+  }
+  .wheel-3 {
+    left: calc(270px + 360px);
+  }
+</style>
+<body>
+  <div class="flag"></div>
+  <div class="stick"></div>
+  <div class="pipe-up"></div>
+  <div class="gray-cap"></div>
+  <div class="pipe-down"></div>
+  <div class="red-cap"></div>
+  <div class="red-cart"></div>
+  <div class="tray"></div>
+  <div class="wheel wheel-1"></div>
+  <div class="wheel wheel-2"></div>
+  <div class="wheel wheel-3"></div>
+</body>

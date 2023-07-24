@@ -1,0 +1,32 @@
+body div:first-of-type {
+  position: relative;
+  overflow: hidden;
+
+  width: 192px;
+  height: 192px;
+  background-color: #000;
+  border-radius: 36px;
+}
+
+body div:first-of-type::before {
+  content: "";
+  position: absolute;
+
+  height: 96px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(145deg, #fcdd2e, #fcb600);
+  box-shadow: -96px 96px #f5f4f0;
+}
+
+body div:first-of-type::after {
+  content: "";
+  position: absolute;
+
+  height: 7px;
+  width: 96px;
+  left: 0;
+  top: 96px;
+  background: linear-gradient(178deg, rgba(0, 0, 0, 0.18), #f5f4f0);
+}
